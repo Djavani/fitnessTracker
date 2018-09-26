@@ -18,6 +18,11 @@ export class SignupComponent implements OnInit {
   }
 
   onSubmit(form: NgForm) {
-    console.log(form);
+    this.mostrarLog(form);
+  }
+  
+  public mostrarLog(form: NgForm) {
+    console.log(form.value.password);    
+    console.log(form.value.email);    
   }
 }
